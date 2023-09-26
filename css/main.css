@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+
+font-family: 'Red Hat Text', sans-serif;
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif; */
+}
+
+
+
+:root {
+    
+--Grayish-blue: hsl(237, 18%, 59%);
+--Soft-red: hsl(345, 95%, 68%);
+--White: hsl(0, 0%, 100%);
+--Dark-desaturated-blue: hsl(236, 21%, 26%);
+--Very-dark-blue: hsl(235, 16%, 14%);
+--Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+}
+
+
+
+
+
+
+
+.landing {
+    height: 100vh;
+    position: relative;
+    background-color: var(--Very-dark-mostly-black-blue);
+    overflow: hidden;
+}
+
+
+.landing > img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+.bottom-image img {
+    position: absolute;
+    bottom: 0;
+}
+h1 {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.box-time {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+.box-time p {
+    color: var(--Soft-red);
+    background-color: var(--Dark-desaturated-blue);
+    padding: 20px 15px;
+    width: 65px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: black 0px 7px 0px 0px;
+}
+.box-time p::after {
+    content: "";
+    background-color: var(--Very-dark-mostly-black-blue);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: -4px;
+    top: 46%;
+}
+.box-time p::before {
+    content: "";
+    background-color: var(--Very-dark-mostly-black-blue);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: -4px;
+    top: 46%;
+}
+.box-one {
+    position: relative;
+}
+.line {
+    background-color: var(--Very-dark-mostly-black-blue);
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+h2 {
+    margin: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 85%;
+    font-weight: 700;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--Grayish-blue);
+}
+.images {
+
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+
+}
+.images img {
+    margin-right: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:400px) {
+    h1 {
+        min-width: 280px;
+    }
+    .box-time {
+        gap: 10px;
+    }
+    .box-time p {
+        padding: 17px 14px;
+        width: 51px;
+        font-size: 35px;
+
+    }
+
+
+
+
+
+
+
+}
